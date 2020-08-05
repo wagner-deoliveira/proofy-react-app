@@ -3,75 +3,112 @@
     height: 100vh;
 }
 
-#search-teachers {
+#page-teacher-form .page-header .header-content {
+    margin-bottom: 6.4rem;
+}
+
+#page-teacher-form main {
+    margin: -3.2rem auto 3.2rem;
+    width: 100%;
+    max-width: 74rem;
+    background: var(--color-box-base);
+    border-radius: 0.8rem;
+    padding-top: 6.4rem;
+    overflow: hidden;
+}
+
+#page-teacher-form main fieldset {
+    border: 0;
+    padding: 0 2.4rem;
+}
+
+#page-teacher-form main label {
+    color: var(--color-text-complement);
+}
+
+#page-teacher-form main fieldset + fieldset {
+    margin-top: 6.4rem;
+}
+
+#page-teacher-form main fieldset legend {
+    font: 700 2.4rem Archivo;
+    color: var(--color-text-title);
+    margin-bottom: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid var(--color-line-in-white);
+}
+
+#page-teacher-form main footer {
+    padding: 4rem 2.4rem;
+    background: var(--color-box-footer);
+    border-top: 1px solid var(--color-line-in-white);
+    margin-top: 6.4rem;
+}
+
+#page-teacher-form main p {
+    display: flex;
+    color: var(--color-text-complement);
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+#page-teacher-form main footer p img {
+    margin-right: 2rem;
+}
+
+#page-teacher-form main footer button {
+    width: 100%;
+    height: 5.6rem;
+    background: var(--color-secundary);
+    color: var(--color-button-text);
+    border: 0;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font: 700 1.6rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.2s;
     margin-top: 3.2rem;
 }
 
-#search-teachers label {
-    color: var(--color-text-in-primary);
+#page-teacher-form main footer button:hover {
+    background: var(--color-secundary-dark);
 }
-
-#search-teachers .input-block {
-    position: relative;
-}
-
-#search-teachers .input-block + .input-block {
-    margin-top: 1.4rem;
-}
-
-#search-teachers .input-block label {
-    font-size: 1.4rem;
-}
-
-#search-teachers .input-block input {
-    width: 100%;
-    height: 5.6rem;
-    margin-top: 0.8rem;
-    border-radius: 0.8rem;
-    background: var(--color-input-background);
-    border: 1px solid var(--color-line-in-white);
-    outline: 0;
-    padding: 0 1.6rem;
-    font: 1.6rem Archivo;
-}
-
-#search-teachers .input-block:focus-within::after {
-    width: calc(100% - 3.2rem);
-    height: 2px;
-    content: '';
-    background: var(--color-primary-light);
-    position: absolute;
-    left: 1.6rem;
-    right: 1.6rem;
-    bottom: 0;
-}
-
-#page-teacher-list main {
-    margin: 3.2rem auto;
-    width: 90%;
-}
-
 
 @media (min-width: 700px) {
     #page-teacher-form {
         max-width: 100%;
     }
 
-    #search-teachers {
+    #page-teacher-form .page-header .header-content {
+        margin-bottom: 0;
+    }
+
+    #page-teacher-form main fieldset {
+        padding: 0 6.4rem;
+    }
+
+    #page-teacher-form main footer {
+        padding: 4.0rem 6.4rem;
         display: flex;
-        grid-auto-columns: repeat(3, 1fr);
-        column-gap: 16px;
-        position: absolute;
-        bottom: -28px;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    #search-teachers .input-block + .input-block {
-        margin-top: 0rem;
+    #page-teacher-form main footer p {
+        justify-content: space-between;
     }
 
-    #page-teacher-list main {
-        padding: 3.2rem 0;
-        max-width: 740px;
-        margin: 0 auto;
+    #page-teacher-form main footer p {
+        width: 20rem;
+        margin-top: 0;
     }
 }
