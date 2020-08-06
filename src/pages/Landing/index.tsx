@@ -42,7 +42,7 @@ function Landing() {
                     </Link>
                 </div>
                 <span className="total-connections">
-                    Total connections {console.log(totalConnections)} //TODO!!
+                    Total connections {/*TODO!! {totalConnections} */}
                     <img src={purpleHeartIcon} alt="Purple Heart"/>
                 </span>
             </div>

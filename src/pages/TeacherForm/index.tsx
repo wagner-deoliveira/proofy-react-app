@@ -32,7 +32,7 @@ function TeacherForm() {
         ]);
         return
     }
-    
+
     function handleCreateClass(e: FormEvent) {
         e.preventDefault();
 
@@ -41,8 +41,8 @@ function TeacherForm() {
             avatar,
             whatsapp,
             bio,
-            subject,
             cost: Number(cost),
+            subject,
             schedule: scheduleItems
         }).then(() => {
             alert('Register done successfully')
@@ -56,18 +56,18 @@ function TeacherForm() {
             avatar,
             whatsapp,
             bio,
-            cost,
             subject,
+            cost,
             scheduleItems
         })
     }
 
     function setScheduleItemValue(position: number, field: string, value: string) {
         const updatedScheduleItems = scheduleItems.map((scheduleItem, index) => {
-            if (index==position) {
-                return {...scheduleItem, [field]:value}
+            if (index === position) {
+                return { ...scheduleItem, [field]: value };
             }
-            console.log(updatedScheduleItems)
+
             return scheduleItem;
         });
 
