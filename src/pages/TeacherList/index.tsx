@@ -19,7 +19,7 @@ function TeacherList() {
         const response = await api.get('classes', {
             params: {
                 subject,
-                weekDay,
+                week_day: weekDay,
                 time
             }
         });

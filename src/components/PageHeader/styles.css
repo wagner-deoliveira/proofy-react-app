@@ -28,6 +28,10 @@
     height: 1.6rem;
 }
 
+.page-header .top-bar-container #proffy{
+    max-width: 8rem;
+}
+
 .page-header .header-content {
     width: 90%;
     margin: 0 auto;
