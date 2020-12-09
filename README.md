@@ -1,3 +1,5 @@
+# Proffy
+![Update Yarn packages](https://github.com/wagner-deoliveira/mobile-expo/workflows/CI%20Update%20Yarn%20packages/badge.svg)  
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
